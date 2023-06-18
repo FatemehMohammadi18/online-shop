@@ -8,14 +8,12 @@ import CartContextProvider from './context/CartContextProvider';
 import Home from './components/Home';
 import {Store} from "./components/Store";
 import { ProductDetails } from './components/ProductDetails';
-import Navbar from './components/shared/Navbar';
 import { ShopCart } from './components/ShopCart';
 import CategoryWomen from './components/CategoryWomen';
 import CategoryJewelery from './components/CategoryJewelery';
 import CategoryElectronics from './components/CategoryElectronics';
 import CategoryMen from './components/CategoryMen';
-
-
+import Navbarr from './components/shared/Navbarr';
 
 
 
@@ -23,7 +21,7 @@ function App() {
   return (
     <ProductCoontextProvider>
       <CartContextProvider>
-        <Navbar />
+        <Navbarr />
       <Routes>
         <Route path="/products/:id" element={<ProductDetails/>} />
         <Route path="/products" element={<Store/>}/>
